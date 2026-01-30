@@ -37,6 +37,7 @@ The script is intended for Vault administrators and automation users who need to
 
    ```powershell
    Import-Module powerVault
-   Open-VaultConnection -Vault TestVault -Server coolOrange1 -User Administrator -Password ""
+   # Use your login info, of course
+   Open-VaultConnection -Vault PDMC-Sample -Server localhost -User Administrator -Password ""
    Show-Inspector $vault
    
