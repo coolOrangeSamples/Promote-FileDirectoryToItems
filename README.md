@@ -30,11 +30,13 @@ The script is intended for Vault administrators and automation users who need to
 1. Download powerVault from:  
    https://download.coolorange.com
 
-2. Install powerVault following the official documentation.
+2. Install powerVault following instructions in email
+3. Check out https://doc.coolorange.com/projects/powervault/en/stable/getting_started/
 
-3. Verify installation by opening a PowerShell session and running:
+4. Verify installation by opening a PowerShell session and running:
 
    ```powershell
    Import-Module powerVault
-   Open-VaultConnection -Vault TestVault -Server coolOrange1 -User Admin -Password ""
+   Open-VaultConnection -Vault TestVault -Server coolOrange1 -User Administrator -Password ""
+   Show-Inspector $vault
    
